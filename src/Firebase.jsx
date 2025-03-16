@@ -82,12 +82,18 @@ import { getStorage } from 'firebase/storage'; // Import Firebase Storage
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDXpCkGOiOueIC3jaeRXFQy0ySOSO20rfg",
-  authDomain: "expense-tracker-df20d.firebaseapp.com",
-  projectId: "expense-tracker-df20d",
-  storageBucket: "expense-tracker-df20d.firebasestorage.app",
-  messagingSenderId: "696430129697",
-  appId: "1:696430129697:web:c47c982c2a7b34caa6e960"
+  // apiKey: "AIzaSyDXpCkGOiOueIC3jaeRXFQy0ySOSO20rfg",
+  // authDomain: "expense-tracker-df20d.firebaseapp.com",
+  // projectId: "expense-tracker-df20d",
+  // storageBucket: "expense-tracker-df20d.firebasestorage.app",
+  // messagingSenderId: "696430129697",
+  // appId: "1:696430129697:web:c47c982c2a7b34caa6e960"
+  apiKey: process.env.REACT_API_KEY,
+  authDomain: process.env.REACT_authDomain,
+  projectId: process.env.REACT_projectId,
+  storageBucket: process.env.REACT_storageBucket,
+  messagingSenderId: process.env.REACT_messagingSenderId,
+  appId: process.env.REACT_appId,
 };
 
 // Initialize Firebase
