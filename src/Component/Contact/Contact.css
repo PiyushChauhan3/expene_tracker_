@@ -1,0 +1,153 @@
+.contact-wrapper {
+  margin-bottom: 3rem;
+}
+
+.page-header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.responsive-title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 600;
+}
+
+.contact-content {
+  padding: 1rem;
+}
+
+.form-control {
+  font-size: 0.9rem !important;
+  padding: 0.75rem !important;
+}
+
+.form-floating label {
+  font-size: 0.85rem;
+  padding: 0.75rem;
+}
+
+.contact-info {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.contact-info-title {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.contact-detail-item:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.icon-box {
+  width: 45px;
+  height: 45px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.icon-box:hover {
+  transform: scale(1.1);
+  background-color: #0b5ed7;
+}
+
+.icon-box i {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.detail-content {
+  margin-left: 1rem;
+}
+
+.detail-title {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.detail-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.map-frame {
+  width: 100%;
+  min-height: 300px;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  border: none;
+}
+
+.btn-send {
+  padding: 0.75rem 2rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn-send:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.15);
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0.5rem;
+  }
+
+  .contact-detail-item {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .icon-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-box i {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-title {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .contact-info {
+    padding: 1rem;
+  }
+
+  .map-frame {
+    min-height: 250px;
+  }
+}

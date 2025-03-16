@@ -1,0 +1,249 @@
+/* Main Container Styling */
+.employee-edit-profile {
+  padding-top: 10px;
+  padding-left: 80px;
+  margin-right: 20px;
+  max-width: 1200px;
+  /* margin: 0 auto; */
+  padding-bottom: 30px;
+  margin-top: 60px; /* Added to account for fixed navbar */
+}
+
+.page-headerss {
+  padding: 1.5rem 0;
+  /* background: #f8f9fa; */
+  margin-bottom: 2rem;
+}
+
+.page-title-boxs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.page-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 0;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.breadcrumb-item a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-item a:hover {
+  color: #0a58ca;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+
+/* Profile Card Styling */
+.profile-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  background: #f8f9fa;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #2c3345;
+}
+
+/* Form Styling */
+.form-content {
+  padding: 1.5rem;
+}
+
+.profile-image-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.profile-image-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  transition: border-color 0.2s;
+}
+
+.profile-image-container:hover {
+  border-color: #0d6efd;
+}
+
+.profile-imagess {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.camera-icons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f1f1f1;
+  width: 32px;  /* Added fixed width */
+  height: 32px; /* Added fixed height */
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+  display: flex;          /* Added flex display */
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  padding: 0;            /* Remove padding */
+}
+
+.camera-icons:hover {
+  background: #e1e1e1;
+}
+
+.camera-icons svg {
+  width: 16px;    /* Adjusted icon size */
+  height: 16px;   /* Adjusted icon size */
+  color: #555;
+}
+
+/* Form Grid and Controls */
+.form-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #495057;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+/* Button Styling */
+.form-actions {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.btns {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.btn-primary:disabled {
+  background-color: #8bb9fe;
+  cursor: not-allowed;
+}
+
+/* Loading States */
+.loader {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .form-grid{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .profile-card {
+    margin: 1rem;
+  }
+
+  .form-content {
+    padding: 1rem;
+  }
+
+  .breadcrumb{
+    display: none;
+  }
+
+  .profile-image-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .page-title-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width:575px) {
+  .editprofile-wrapper{
+    padding-left: 10px !important;
+  }
+}
+
