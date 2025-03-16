@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/expense_tracker/static/css/main.86f6cf24.css",
+    "main.js": "/expense_tracker/static/js/main.13b8dc90.js",
+    "static/js/239.f9af0957.chunk.js": "/expense_tracker/static/js/239.f9af0957.chunk.js",
+    "static/js/977.fec13d71.chunk.js": "/expense_tracker/static/js/977.fec13d71.chunk.js",
+    "static/js/732.753a57c2.chunk.js": "/expense_tracker/static/js/732.753a57c2.chunk.js",
+    "static/media/1.png": "/expense_tracker/static/media/1.b67ac071f8bb77dd2c2a.png",
+    "static/media/bgc.jpg": "/expense_tracker/static/media/bgc.39c537b66e12ebbd1042.jpg",
+    "static/media/background.png": "/expense_tracker/static/media/background.15a4e23ec4bac68002ee.png",
+    "static/media/bill-def-img.png": "/expense_tracker/static/media/bill-def-img.718ddaf4d09812952901.png",
+    "index.html": "/expense_tracker/index.html",
+    "main.86f6cf24.css.map": "/expense_tracker/static/css/main.86f6cf24.css.map",
+    "main.13b8dc90.js.map": "/expense_tracker/static/js/main.13b8dc90.js.map",
+    "239.f9af0957.chunk.js.map": "/expense_tracker/static/js/239.f9af0957.chunk.js.map",
+    "732.753a57c2.chunk.js.map": "/expense_tracker/static/js/732.753a57c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86f6cf24.css",
+    "static/js/main.13b8dc90.js"
+  ]
+}
