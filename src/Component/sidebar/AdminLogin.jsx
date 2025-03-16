@@ -41,7 +41,7 @@ const Login = () => {
     } else if (employee){
       navigate("/dashboard")
     } else {
-      navigate("/")
+      navigate("/login_signup_page");
     }
   }, [navigate]);
 

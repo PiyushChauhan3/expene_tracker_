@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
+import { HashRouter as Router , Routes, Route, useLocation, Navigate } from "react-router-dom";
 
 import Profile from "./Profile";
 import Navbar from "./Component/navbar/Navbar";
@@ -39,25 +39,30 @@ import AddTestExpenses from "./AddTestExpenses";
 const App = () => {
   const location = useLocation();
   const [status] = useState("default");
-  const { currentUser } = useAuth();
+  const { currentUser, loading } = useAuth(); // Include loading state
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
+  useEffect(() => { 
+    
+    console.log("Current User:", currentUser);
+
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 2000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [currentUser]);
+
+ 
 
   // Updated hideNavbar condition - removed aboutus, contact, rateus from the list
   const hideNavbar =
-    location.pathname === "/" ||
+    location.pathname === "/home" ||
     location.pathname === "/adminregister" ||
     location.pathname === "/forget" ||
     location.pathname === "/adminlogin" ||
     location.pathname === "/EmployeeLogin" ||
     location.pathname === "/login_signup_page" ||
-    location.pathname === "/share";
+    location.pathname === "/share"; 
 
   const [isSidebarVisible, setSidebarVisible] = useState(true);
   const toggleSidebar = () => {
@@ -73,10 +78,10 @@ const App = () => {
       {!hideNavbar && <Side isSidebarVisible={isSidebarVisible} />}
       {!hideNavbar && <Navbar toggleSidebar={toggleSidebar} />}
       <Routes >
-        {/* Public routes */}
-        {/* <Route path="/" element={<LandingPage />} /> */}
-        <Route 
-          path="/" 
+        {/* Public routes
+        <Route path="/home" element={<LandingPage />} /> */}
+        {/* <Route 
+          path="/login_signup_page" 
           element={
             currentUser ? (
               <Navigate to="/dashboard" replace />
@@ -84,10 +89,17 @@ const App = () => {
               <AdminAndEmployeeLogin />
             )
           } 
-        />
+        /> */}
         <Route 
-          path="/adminlogin" 
-          element={
+  path="/login_signup_page" 
+  
+  element={<>
+    {console.log("Rendering AdminAndEmployeeLogin")}
+  <AdminAndEmployeeLogin />
+  </>
+  } 
+/>
+        <Route path="/adminlogin" element={
             currentUser ? (
               <Navigate to="/dashboard" replace />
             ) : (
@@ -130,9 +142,9 @@ const App = () => {
 // Wrap App component in BrowserRouter in a separate component
 const AppWrapper = () => (
   <AuthProvider>
-  <BrowserRouter basename="/expene_tracker"> 
+  <Router > 
     <App />
-  </BrowserRouter>
+  </Router >
   </AuthProvider>
 );
 

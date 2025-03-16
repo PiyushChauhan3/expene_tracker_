@@ -39,7 +39,7 @@
 
 
 
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 
 export const AuthContext = createContext();
@@ -53,6 +53,9 @@ const [admindocid , setAdmindocid] = useState(localStorage.getItem("adminDocId")
 const [practice , setPractice] = useState("1234")
 
   const [user , setUser] = useState(null);
+
+  const [currentUser, setCurrentUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const [userData, setUserData] = useState({
     username: "",
@@ -97,6 +100,25 @@ const [practice , setPractice] = useState("1234")
     setIsAuthenticated(false); // Update the state to reflect logged out status
     setUser(null); // Clear user data
   };
+
+  useEffect(() => {
+    // Simulate fetching user data (replace with your actual logic)
+    const fetchUser = async () => {
+      try {
+        // Simulate API call
+        const user = await new Promise((resolve) =>
+          setTimeout(() => resolve(null), 1000) // Replace `null` with user data if logged in
+        );
+        setCurrentUser(user);
+      } catch (error) {
+        console.error("Error fetching user:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchUser();
+  }, []);
 
   return (
     <AuthContext.Provider
