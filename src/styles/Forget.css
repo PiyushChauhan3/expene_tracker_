@@ -1,0 +1,93 @@
+.forgot-password-container {
+  padding: 40px;
+}
+
+.forgot-password-card {
+  margin: 20px;
+}
+
+.forgot-password-header {
+  padding: 30px;
+}
+
+.forgot-password-input {
+  font-size: 16px;
+  width: 100%;
+}
+
+.forgot-password-button {
+  font-size: 16px;
+}
+
+.form-group{
+  display: block;
+  grid-template-columns: none !important;
+}
+
+
+@media (max-width: 1024px) {
+  .forgot-password-container {
+    padding: 30px;
+  }
+
+  .forgot-password-card {
+    margin: 15px;
+  }
+
+  .forgot-password-header {
+    padding: 25px;
+  }
+
+  .forgot-password-input {
+    font-size: 15px;
+  }
+
+  .forgot-password-button {
+    font-size: 15px;
+  }
+  .form-group{
+    grid-template-columns: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .forgot-password-container {
+    padding: 20px;
+  }
+
+  .forgot-password-card {
+    margin: 10px;
+  }
+
+  .forgot-password-header {
+    padding: 20px;
+  }
+
+  .forgot-password-input {
+    font-size: 14px;
+  }
+
+  .forgot-password-button {
+    font-size: 14px;
+  }
+  .form-group{
+    grid-template-columns: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .forgot-password-container {
+    padding: 15px;
+  }
+
+  .forgot-password-input {
+    font-size: 12px;
+  }
+
+  .forgot-password-button {
+    font-size: 12px;
+  }
+  .form-group{
+    grid-template-columns: none;
+  }
+}

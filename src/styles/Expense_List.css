@@ -1,0 +1,482 @@
+/* Base styles */
+.admin-expense-list-container {
+  padding-top: 70px !important;
+  padding-left: 70px !important;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 40px !important;
+}
+
+/* Page header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  min-height: auto;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333;
+}
+
+.breadcrumb-wrapper {
+  font-size: 0.875rem;
+}
+
+/* Card styles */
+.card {
+  background: #fff;
+  color: #333; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+}
+
+.card-body {
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.card-header {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-left {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* Search input */
+.search-wrapper {
+  position: relative;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  width: 200px;
+}
+
+/* Table styles */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  font-size: 0.875rem;
+}
+
+/* Mobile card view */
+.mobile-expenses {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.expense-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.form-controls {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.expense-summary {
+  font-weight: 700;
+}
+
+.expense-summary .amount {
+  color: purple;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .admin-expense-list-container {
+    padding-top: 70px !important;
+    }
+}
+
+@media (max-width: 992px) {
+  .admin-expense-list-container{
+    padding-left: 20px !important;
+    padding-left: 15px !important;
+  }
+
+  /* .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+  
+  .search-input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    width: 200px;
+  }
+ 
+}
+
+@media (max-width:675px) {
+  .header-content{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+}
+
+@media (min-width:992px) {
+  .sidebar-open{
+    padding-left: 280px !important;
+    transition: padding 0.3s ease-in-out;
+  }
+  .sidebar-open .admin-expense-list-container{
+    padding-left: 70px !important;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .admin-expense-list-container{
+    padding-left: 15px !important;
+  }
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .breadcrumb-wrapper{
+    display: none;
+  }
+  .table {
+    font-size: 0.813rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-expense-list-container {
+    padding-top: 60px !important ;
+    padding-left: 10px !important;
+    padding-bottom: 40px !important;
+  }
+  
+  .card-title {
+    font-size: 1.125rem;
+  }
+  
+  .expense-card {
+    padding: 0.75rem;
+  }
+
+  .down-btn{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .pagination-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .page-item {
+    margin-bottom: 10px;
+  }
+}
+
+/* Utils */
+.text-small {
+  font-size: 0.813rem;
+}
+
+.text-smaller {
+  font-size: 0.75rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.expense-card {
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Fix modal rendering issues */
+.modal-content {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
+  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate3d(0, 0, 0); /* Enable hardware acceleration */
+}
+
+/* Ensure modal height is always even */
+.modal {
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.modal::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.modal-content {
+  transform: none !important;
+  backface-visibility: visible !important;
+  will-change: auto;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+/* Improve text clarity */
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure sharp rendering of modal elements */
+.modal-header,
+.modal-body,
+.modal-footer {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Fix for blurry text inside the modal */
+body {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Action button styles */
+.action-btn {
+  width: 25px !important;
+  height: 25px !important;
+  padding: 6px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 3px !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.2s ease !important;
+}
+
+.action-btn:hover,
+.action-btn:active,
+.action-btn:focus {
+  transform: scale(1.05);
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.action-btn svg {
+  width: 14px !important;
+  height: 14px !important;
+  display: block !important;
+  color: #fff !important;
+}
+
+/* Mobile specific button styles */
+@media  screen and (max-width: 576px) {
+  .action-btn,
+  .action-btn:hover,
+  .action-btn:active,
+  .action-btn:focus {
+    width: 28px !important;
+    height: 28px !important;
+    padding: 5px !important;
+  }
+
+  .action-btn svg {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  .expense-details{
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .modal-res {
+    width: 100% !important;
+  }
+
+  .modal-res1{
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+}
+
+.page-item {
+  margin: 0;
+}
+
+.page-link {
+  padding: 8px 12px;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.page-link:hover {
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+  color: #0056b3;
+}
+
+@media (max-width: 576px) {
+  .pagination {
+    gap: 3px;
+  }
+  
+  .page-link {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
+
+.no-results {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.page-item.disabled .page-link {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* View action button styles */
+.view-btn {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+  color: white !important;
+}
+
+.view-btn:hover {
+  background-color: #218838 !important;
+  border-color: #1e7e34 !important;
+}
+
+/* View expense modal styles */
+.view-expense-modal .modal-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.view-expense-modal .modal-body {
+  padding: 1.5rem;
+}
+
+.expense-detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.expense-detail-label {
+  font-weight: 600;
+  color: #666;
+}
+
+.expense-detail-value {
+  color: #333;
+}
+
+/* Receipt image in modal */
+.receipt-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .expense-details {
+    flex-direction: column !important;
+    align-items: stretch !important; /* Ensure items stretch to full width */
+  }
+
+  .modal-res1 {
+    width: 100% !important;
+    margin-bottom: 15px; /* Add some spacing between image and details */
+
+  }
+
+  .modal-res {
+    width: 100% !important;
+  }
+
+  .modal-dialog {
+    max-width: 90% !important; /* Adjust as needed */
+    margin: 1.75rem auto !important; /* Keep it centered */
+  }
+
+  .modal-body {
+    overflow-y: auto; /* Make the body scrollable if content overflows */
+    max-height: 60vh; /* Limit the height to prevent it from being too large */
+  }
+}

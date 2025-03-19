@@ -1,0 +1,798 @@
+/* Root variables for consistent theming */
+:root {
+  --primary-color: #4a90e2;
+  --error-color: #dc3545;
+  --border-color: #ddd;
+  --input-height: 60px;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+
+/* Base styles */
+.add-employee-container{
+  padding-top: 80px !important;
+  padding-left:  70px !important;
+  padding-bottom: 40px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-employee-page .add-employee-container {
+  margin-top: 80px;
+  margin-left: 10%;
+  margin-right: 85px;
+  padding-bottom: 30px;
+}
+
+.addemp-breadcrumb-item {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.page-title-box {
+  padding-bottom: 20px;
+}
+
+.add-employee-page .page-header {
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}
+
+.add-employee-page .page-title {
+  font-size: 24px;
+}
+
+.add-employee-page .breadcrumb {
+  background-color: transparent;
+}
+
+.add-employee-page .form-container {
+  margin-left: 59px;
+  margin-top: 20px;
+}
+
+/* Modern card styles */
+.add-employee-page .card-custom {
+  margin-right: 60px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  transition: transform var(--transition-speed);
+}
+
+.add-employee-page .card-custom:hover {
+  transform: translateY(-2px);
+}
+
+.add-employee-page .card-header {
+  color: #1a1a1a;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.add-employee-page .card-title {
+  font-size: 18px;
+}
+
+.add-employee-page .card-body {
+  padding: 20px;
+}
+
+.add-employee-page .profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.add-employee-page .profile-image-preview {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-employee-page .profile-images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.add-employee-page .camera-icon-container {
+  position: absolute;
+  bottom: 10px;
+  right: calc(50% - 95px);
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+}
+
+.add-employee-page .camera-icon-container:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Improved form input styles */
+.add-employee-page .form-input {
+  height: 50px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1.5px solid #e0e0e0;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  padding: 12px 16px;
+}
+
+.add-employee-page .form-input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.add-employee-page .password-input-container {
+  position: relative;
+}
+
+.add-employee-page .toggle-password {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.add-employee-page .status-radio-group {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.add-employee-page .text-danger {
+  color: #dc3545;
+  font-size: 14px;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .add-employee-page .add-employee-container {
+    margin-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .add-employee-page .add-employee-container.ml-280 {
+    margin-left: 0;
+  }
+
+  .add-employee-page .page-header {
+    margin-right: 20px;
+  }
+
+  .add-employee-page .page-title {
+    font-size: 20px;
+  }
+
+  .add-employee-page .form-container {
+    margin-right: 20px;
+  }
+
+  .add-employee-page .card-custom {
+    margin-right: 20px;
+  }
+
+  .add-employee-page .col-form-label {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  .add-employee-page .form-input {
+    width: 100% !important;
+    font-size: 14px;
+  }
+
+  .add-employee-page .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .add-employee-page .status-radio-group {
+    gap: 1rem;
+  }
+
+  .add-employee-page .btn-primary {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .add-employee-page .card-title {
+    font-size: 16px;
+  }
+
+  .add-employee-page .col-sm-2,
+  .add-employee-page .col-sm-10 {
+    margin-bottom: 10px;
+  }
+
+  .add-employee-page .profile-image-preview {
+    width: 120px;
+    height: 120px;
+  }
+
+  .add-employee-container {
+    padding: 10px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .add-employee-page .card {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .add-employee-page input,
+  .add-employee-page button {
+    font-size: 16px;
+  }
+
+  .page-title-box,
+  .breadcrumb {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-employee-page .add-employee-container {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  .add-employee-page .page-title {
+    font-size: 1.5rem;
+  }
+
+  .add-employee-page .breadcrumb {
+    font-size: 0.875rem;
+  }
+
+  .add-employee-page .form-label {
+    font-size: 1rem !important;
+  }
+
+  .add-employee-page .form-input {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .add-employee-page .profile-image-preview {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .add-employee-page .add-employee-container {
+
+    margin: 80px auto 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .add-employee-container {
+    padding-bottom: 40px !important;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .add-employee-page .add-employee-container {
+  }
+
+  .add-employee-page .form-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .add-employee-container {
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+  }
+
+  .form-control {
+    height: 50px;
+  }
+}
+
+@media (min-width:992px) {
+  
+  .sidebar-open{
+    padding-left: 280px !important;
+    transition: padding 0.3s ease-in-out;
+  }
+
+  .sidebar-open .add-employee-container{
+    padding-left: 70px !important;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .add-employee-page .add-employee-container {
+    margin: 70px auto 0;
+    padding: 0 15px;
+  }
+
+  .add-employee-page .card-custom {
+    margin: 0 15px;
+  }
+
+  .add-employee-page .form-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .add-employee-container {
+   padding-top: 70px !important;
+   padding-left: 15px !important;
+  }
+
+  .card {
+    margin: 0;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .breadcrumb {
+    margin-top: 10px;
+  }
+
+  .form-label {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  
+
+  .add-employee-container{
+    padding-top: 60px !important;
+    padding-left: 10px !important;
+
+  }
+
+  .add-employee-page .card-body {
+    padding: 15px;
+  }
+
+  .add-employee-page .profile-image-preview {
+    width: 100px;
+    height: 100px;
+  }
+
+  .add-employee-page .form-label {
+    margin-bottom: 8px;
+  }
+
+  .add-employee-page .form-input {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .add-employee-page .btn-primary {
+    width: 100%;
+    height: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .add-employee-container {
+    padding: 40px 15px;
+    padding-bottom: 40px;
+  }
+
+  .profile-image-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .page-title-main{
+    margin-bottom: 0px !important;
+  }
+
+  .form-control {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .page-title {
+    font-size: 20px;
+  }
+
+  .breadcrumb {
+    font-size: 14px;
+  }
+
+  .form-check-input {
+    width: 16px;
+    height: 16px;
+  }
+
+  .form-check-label {
+    font-size: 14px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .add-employee-page .card-custom {
+    background-color: #2d2d2d;
+  }
+
+  .add-employee-page .form-input {
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+
+  .add-employee-page .form-input:focus {
+    border-color: #5a9cf2;
+    box-shadow: 0 0 0 2px rgba(90, 156, 242, 0.2);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .camera-icon {
+    background: #2d2d2d;
+  }
+}
+
+/* Card styles */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  transition: transform var(--transition-speed);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Form styles */
+.form-control {
+  height: var(--input-height);
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border-color);
+  transition: all var(--transition-speed);
+  padding: 12px 16px;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+/* Profile image styles */
+.profile-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+.profile-preview {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  z-index: 1050;
+}
+
+.camera-icon:hover {
+  transform: scale(1.1);
+  background: #f8f9fa;
+}
+
+/* Radio button styles */
+.form-check-input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.form-check-label {
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+/* Error messages */
+.text-danger {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Form text sizes */
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-control {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+}
+
+.camera-icon:hover {
+  transform: scale(1.1);
+  background: #f8f9fa;
+}
+
+/* Radio button styles */
+.form-check-input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.form-check-label {
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+/* Error messages */
+.text-danger {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Profile image and camera icon styles */
+/* .profile-image-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 1.5rem auto;
+  padding: 0;
+}
+
+.profile-images {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: 10px; /* Set bottom to 10px to make it fully visible */
+  /* left: 50%;
+  transform: translateX(-50%); /* Adjust transform to center it */
+  /* background: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  z-index: 1050; 
+}
+
+.camera-icon:hover {
+  transform: translateX(-50%) scale(1.1);
+  background: #f8f9fa;
+} */ 
+
+.profile-image-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+ .profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Camera Icon */
+ .camera-icon-label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .camera-icon-label label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+ .camera-icon-label svg {
+  width: 16px;
+  height: 16px;
+  color: #555;
+}
+
+.camera-icon-label:hover {
+  transform: scale(1.1);
+}
+
+
+/* Form text sizes */
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-control {
+  font-size: 0.95rem;
+  height: 45px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .profile-image-container {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 992px) {
+  .profile-image-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .page-title-main{
+    margin-bottom: 20px !important;
+  }
+  
+  .form-label {
+    font-size: 0.85rem;
+  }
+  
+  .form-control {
+    font-size: 0.9rem;
+    height: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-image-container {
+    width: 90px;
+    height: 90px;
+  }
+
+  .mb-4{
+    margin-bottom: 1rem;
+  }
+  
+  .camera-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .form-label {
+    font-size: 0.8rem;
+  }
+  
+  .form-control {
+    font-size: 0.85rem;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-image-container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-image{
+    margin-top: 15px !important;
+  }
+  
+  .camera-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .form-label {
+    font-size: 0.75rem;
+  }
+  
+  .form-control {
+    font-size: 0.8rem;
+    height: 38px;
+  }
+  
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+}
