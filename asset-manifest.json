@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://piyushchauhan3.github.io/expene_tracker_/static/css/main.ce363d94.css",
-    "main.js": "https://piyushchauhan3.github.io/expene_tracker_/static/js/main.75be94a8.js",
+    "main.js": "https://piyushchauhan3.github.io/expene_tracker_/static/js/main.9e098e73.js",
     "static/js/239.a7a45cbc.chunk.js": "https://piyushchauhan3.github.io/expene_tracker_/static/js/239.a7a45cbc.chunk.js",
     "static/js/977.d0006ad7.chunk.js": "https://piyushchauhan3.github.io/expene_tracker_/static/js/977.d0006ad7.chunk.js",
     "static/js/732.0ab18ecb.chunk.js": "https://piyushchauhan3.github.io/expene_tracker_/static/js/732.0ab18ecb.chunk.js",
@@ -11,12 +11,12 @@
     "static/media/bill-def-img.png": "https://piyushchauhan3.github.io/expene_tracker_/static/media/bill-def-img.718ddaf4d09812952901.png",
     "index.html": "https://piyushchauhan3.github.io/expene_tracker_/index.html",
     "main.ce363d94.css.map": "https://piyushchauhan3.github.io/expene_tracker_/static/css/main.ce363d94.css.map",
-    "main.75be94a8.js.map": "https://piyushchauhan3.github.io/expene_tracker_/static/js/main.75be94a8.js.map",
+    "main.9e098e73.js.map": "https://piyushchauhan3.github.io/expene_tracker_/static/js/main.9e098e73.js.map",
     "239.a7a45cbc.chunk.js.map": "https://piyushchauhan3.github.io/expene_tracker_/static/js/239.a7a45cbc.chunk.js.map",
     "732.0ab18ecb.chunk.js.map": "https://piyushchauhan3.github.io/expene_tracker_/static/js/732.0ab18ecb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce363d94.css",
-    "static/js/main.75be94a8.js"
+    "static/js/main.9e098e73.js"
   ]
 }
