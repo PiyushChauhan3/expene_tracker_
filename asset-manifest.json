@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/expene_tracker_/static/css/main.86f6cf24.css",
-    "main.js": "/expene_tracker_/static/js/main.5f5c78a6.js",
-    "static/js/239.a7a45cbc.chunk.js": "/expene_tracker_/static/js/239.a7a45cbc.chunk.js",
-    "static/js/977.d0006ad7.chunk.js": "/expene_tracker_/static/js/977.d0006ad7.chunk.js",
-    "static/js/732.74ca1a1e.chunk.js": "/expene_tracker_/static/js/732.74ca1a1e.chunk.js",
-    "static/media/1.png": "/expene_tracker_/static/media/1.b67ac071f8bb77dd2c2a.png",
-    "static/media/bgc.jpg": "/expene_tracker_/static/media/bgc.39c537b66e12ebbd1042.jpg",
-    "static/media/background.png": "/expene_tracker_/static/media/background.15a4e23ec4bac68002ee.png",
-    "static/media/bill-def-img.png": "/expene_tracker_/static/media/bill-def-img.718ddaf4d09812952901.png",
-    "index.html": "/expene_tracker_/index.html",
-    "main.86f6cf24.css.map": "/expene_tracker_/static/css/main.86f6cf24.css.map",
-    "main.5f5c78a6.js.map": "/expene_tracker_/static/js/main.5f5c78a6.js.map",
-    "239.a7a45cbc.chunk.js.map": "/expene_tracker_/static/js/239.a7a45cbc.chunk.js.map",
-    "732.74ca1a1e.chunk.js.map": "/expene_tracker_/static/js/732.74ca1a1e.chunk.js.map"
+    "main.css": "https://piyushchauhan3.github.io/expene_tracker_/static/css/main.86f6cf24.css",
+    "main.js": "https://piyushchauhan3.github.io/expene_tracker_/static/js/main.308c0a4d.js",
+    "static/js/239.a7a45cbc.chunk.js": "https://piyushchauhan3.github.io/expene_tracker_/static/js/239.a7a45cbc.chunk.js",
+    "static/js/977.d0006ad7.chunk.js": "https://piyushchauhan3.github.io/expene_tracker_/static/js/977.d0006ad7.chunk.js",
+    "static/js/732.74ca1a1e.chunk.js": "https://piyushchauhan3.github.io/expene_tracker_/static/js/732.74ca1a1e.chunk.js",
+    "static/media/1.png": "https://piyushchauhan3.github.io/expene_tracker_/static/media/1.b67ac071f8bb77dd2c2a.png",
+    "static/media/bgc.jpg": "https://piyushchauhan3.github.io/expene_tracker_/static/media/bgc.39c537b66e12ebbd1042.jpg",
+    "static/media/background.png": "https://piyushchauhan3.github.io/expene_tracker_/static/media/background.15a4e23ec4bac68002ee.png",
+    "static/media/bill-def-img.png": "https://piyushchauhan3.github.io/expene_tracker_/static/media/bill-def-img.718ddaf4d09812952901.png",
+    "index.html": "https://piyushchauhan3.github.io/expene_tracker_/index.html",
+    "main.86f6cf24.css.map": "https://piyushchauhan3.github.io/expene_tracker_/static/css/main.86f6cf24.css.map",
+    "main.308c0a4d.js.map": "https://piyushchauhan3.github.io/expene_tracker_/static/js/main.308c0a4d.js.map",
+    "239.a7a45cbc.chunk.js.map": "https://piyushchauhan3.github.io/expene_tracker_/static/js/239.a7a45cbc.chunk.js.map",
+    "732.74ca1a1e.chunk.js.map": "https://piyushchauhan3.github.io/expene_tracker_/static/js/732.74ca1a1e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86f6cf24.css",
-    "static/js/main.5f5c78a6.js"
+    "static/js/main.308c0a4d.js"
   ]
 }
