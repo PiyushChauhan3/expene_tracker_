@@ -1,0 +1,235 @@
+.responsive-container {
+  padding-top: 60px !important;
+  padding-left: 70px !important;
+  padding-bottom: 40px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h3 {
+  font-size: 18px; /* Make header text smaller */
+}
+
+.table-responsive {
+  margin-top: 20px;
+}
+
+.batch-actions {
+  display: flex;
+  text-align: center;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.batch-actions-header {
+  display: flex;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.batch-actions-header button {
+  padding: 5px 10px; /* Make buttons more compact */
+  font-size: 14px; /* Adjust button text size */
+}
+
+.ee-title{
+  padding-left: 20px;
+}
+
+.fc-date{
+  display: flex;
+  justify-content: left;
+}
+
+.modal-res1{
+
+  height: 100%;
+}
+
+.detail-row strong {
+  
+  min-width: 75px; /* Ensure consistent width for labels */
+  display: inline-block; /* Allows width to be respected */
+}
+
+@media (max-width: 1200px) {
+  .responsive-container {
+    padding-left: 70px !important;
+    padding-right: 20px !important;
+  }
+
+ 
+}
+
+@media (max-width: 1024px) {
+ 
+}
+
+@media (max-width: 992px) {
+  .responsive-container {
+    padding-left: 15px !important;
+  }
+
+  .batch-actions{
+    padding: 0 !important;
+    margin:  0 !important;
+  }
+
+  .header h3 {
+    font-size: 16px; /* Further reduce header text size for smaller screens */
+  }
+
+  .batch-actions-header button {
+    font-size: 12px; /* Further adjust button text size */
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar-open {
+    padding-left: 280px !important;
+    transition: padding 0.3s ease-in-out;
+  }
+
+  .sidebar-open .responsive-container {
+    padding-left: 70px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    padding-top: 60px;
+  }
+
+  .content-wrapper {
+    padding: 10px;
+  }
+
+  .header {
+    margin-bottom: 10px;
+  }
+
+  .header h3 {
+    margin-bottom: 10px;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+
+  .batch-actions {
+  
+  }
+
+  .header-actions {
+    display: flex;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+    align-items: center;
+  }
+
+  .header-text{
+  flex-direction: column;
+  
+  }
+
+ .summary-label{
+  font-size: 10px !important;
+ }
+
+  .batch-actions-header {
+   
+    width: 100%;
+    justify-content: center;
+  }
+
+  .batch-actions-header button {
+    flex: 1;
+    white-space: nowrap;
+  }
+
+ 
+}
+
+@media (max-width:576px) {
+  .responsive-container{
+    padding-top: 60px !important;
+    padding-left: 10px !important;
+  }
+
+  .btn-back{
+    font-size: 15px !important;
+    padding: 2px 4px 2px 4px !important;
+    
+  }
+
+  .modal-emp-exe{
+    left: 50% !important;
+  }
+
+  .ee-title{
+    font-size : 14px;
+  }
+
+  .btn-app{
+    font-size: 10px !important;
+  }
+
+  .btn-rej{
+    font-size: 10px !important;
+  }
+
+  .batch-actions{
+    padding: 0 !important;
+    margin:  0 !important;
+  }
+
+  .approveed .rejected .total{
+    font-size: 10px !important;
+  }
+
+  .header-text{
+    width: fit-content !important;
+  }
+
+  .detail-row {
+    margin-bottom: 5px;
+  }
+
+  .detail-row strong {
+    margin-right: 5px;
+    min-width: 50px;
+  }
+
+
+  .header > div {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .header > div:first-child {
+    margin-bottom: 0;
+  }
+
+  .header-actions {
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width : 470px) {
+  .header-text{
+    width: 100% !important;
+
+  }
+}
