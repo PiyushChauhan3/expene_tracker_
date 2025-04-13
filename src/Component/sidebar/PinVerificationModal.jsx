@@ -84,6 +84,7 @@ const PinVerificationModal = ({ show, onHide, onVerify,  }) => {
       } else {
         navigate('/dashboard');
       }
+      // Clear the local storage
       return (
         <div style={{
           position: 'fixed',
