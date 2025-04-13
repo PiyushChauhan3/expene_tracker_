@@ -3,7 +3,7 @@ import { Modal, Form, Button } from 'react-bootstrap';
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import '../../styles/PinModal.css';
 import { doc, onSnapshot } from 'firebase/firestore';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { db } from '../../Firebase';
 import PinSetupModal from './PinSetupModal';
@@ -20,6 +20,7 @@ const PinVerificationModal = ({ show, onHide, onVerify,  }) => {
   const [isLoading, setIsLoading] = useState(false);
   const pinInputRef = useRef(null);
   const doneButtonRef = useRef(null);
+  const navigate = useNavigate();
     
     const adminId = localStorage.getItem("adminDocId");
     const employeeId = localStorage.getItem("EmployeeDocId");
@@ -77,13 +78,10 @@ const PinVerificationModal = ({ show, onHide, onVerify,  }) => {
     
     try {
       await onVerify(pin);
+      onHide();
+      navigate('/dashboard');
       doneButtonRef.current.focus();
-      // Show loader
-      if (Role === 'admin') {
-        navigate('/dashboard');
-      } else {
-        navigate('/dashboard');
-      }
+      
       return (
         <div style={{
           position: 'fixed',
@@ -109,7 +107,6 @@ const PinVerificationModal = ({ show, onHide, onVerify,  }) => {
       setError('Invalid PIN. Please try again.');
     } finally {
       setIsLoading(false);
-      
     }
   };
 
