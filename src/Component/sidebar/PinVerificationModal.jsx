@@ -78,6 +78,12 @@ const PinVerificationModal = ({ show, onHide, onVerify,  }) => {
     try {
       await onVerify(pin);
       doneButtonRef.current.focus();
+      // If verification is successful, navigate to the desired page
+      if (Role === 'admin') {
+        navigate('/dashboard');
+      } else {
+        navigate('/dashboard');
+      }
       // Show loader
       return (
         <div style={{
