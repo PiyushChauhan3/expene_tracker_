@@ -84,7 +84,6 @@ const PinVerificationModal = ({ show, onHide, onVerify,  }) => {
       } else {
         navigate('/dashboard');
       }
-      // Show loader
       return (
         <div style={{
           position: 'fixed',
